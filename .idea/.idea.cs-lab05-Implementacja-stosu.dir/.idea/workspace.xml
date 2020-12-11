@@ -25,8 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22c531fa-8aa8-4707-a992-b1cbe555a53f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StosWLiscie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.cs-lab05-Implementacja-stosu.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cs-lab05-Implementacja-stosu.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StosWLiscie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/StosWLiscie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StosWTablicy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/StosWTablicy.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +78,7 @@
       <workItem from="1607691577617" duration="57000" />
       <workItem from="1607691861207" duration="56000" />
       <workItem from="1607693668942" duration="1720000" />
+      <workItem from="1607698783934" duration="3268000" />
     </task>
     <servers />
   </component>
@@ -96,6 +97,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -105,9 +107,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.188.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607691882382" />
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1607702008498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/-1920.188.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607702008498" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1607689625159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/-1920.188.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607689625159" />
+    <state x="-1484" y="443" width="1356" height="1027" key="dock-window-1" timestamp="1607702201609">
+      <screen x="-1920" y="188" width="1920" height="1040" />
+    </state>
+    <state x="-1484" y="443" width="1356" height="1027" key="dock-window-1/-1920.188.1920.1040/0.0.1920.1040@-1920.188.1920.1040" timestamp="1607702201609" />
+    <state x="-1413" y="654" width="1356" height="1027" key="dock-window-1/-1920.188.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607701817048" />
   </component>
 </project>

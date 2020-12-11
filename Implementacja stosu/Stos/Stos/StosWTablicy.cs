@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Stos
 {
@@ -56,14 +58,15 @@ namespace Stos
         public T this[int index] => (index > Count - 1) ? throw new IndexOutOfRangeException(): tab[index];
 
         // wywołanie enumeratora 
-        public IEnumerator<T> GetEnumerator() => new EnumeratorStosu(this);
+        public IEnumerator<T> GetEnumerator() =>  new EnumeratorStosu(this);
 
         // wywołanie enumeratora za pomocą indeksera  oraz słowa kluczowego yield
-        public IEnumerator<T> GetEnumerator()
+        
+        /*public IEnumerator<T> GetEnumerator()
         {
             for (int i = 0; i < Count; i++)
                 yield return this[i];
-        }
+        }*/
 
         // przeglądanie stosu od ostatniego wstawionego do pierwszego
         public IEnumerable<T> TopToBottom
@@ -81,29 +84,31 @@ namespace Stos
         }
 
         // metoda modyfikująca stos (zajętych ok. 90% komórek, ok. 10% wolnych)
-        public void TrimExcess()
-    }
-    // implementacja iteratora - obiekt IEnumerable<T>
-    private class EnumeratorStosu : IEnumerator<T>
-    {
-        private StosWTablicy<T> stos;
-        private int position = -1;
-        interneal EnumeratorStosu(StosWTablicy<T> stos) => this.stos = stos;
-        public T Current => stos.tab[position];
-        object IEnumerator.Current => Current; 
-        public void Dispose(){}
-
-        public bool MoveNext()
+        public void TrimExcess(){}
+        
+        // implementacja iteratora - obiekt IEnumerable<T>
+        private class EnumeratorStosu : IEnumerator<T>
         {
-            if (position < stos.Count - 1)
+            private StosWTablicy<T> stos;
+            private int position = -1;
+            internal EnumeratorStosu(StosWTablicy<T> stos) => this.stos = stos;
+            public T Current => stos.tab[position];
+            object IEnumerator.Current => Current; 
+            public void Dispose(){}
+
+            public bool MoveNext()
             {
-                position++;
-                return true;
+                if (position < stos.Count - 1)
+                {
+                    position++;
+                    return true;
+                }
+                return false;
             }
-            else return false;
+
+            public void Reset() => position = -1;
         }
-
-        public void Reset() => position = -1;
     }
+   
+   
 }
-

@@ -2,7 +2,7 @@
 
 namespace Stos
 {
-    public class StosWLiscie<T>: IStos<T>
+    /*public class StosWLiscie<T>: IStos<T>
     {
         private Wezel szczyt;
         public StosWLiscie()
@@ -26,5 +26,5 @@ namespace Stos
         public bool IsEmpty => szczyt == null;
             
         
-    }
+    }*/
 }
