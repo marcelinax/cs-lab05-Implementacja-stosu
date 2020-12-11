@@ -24,10 +24,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22c531fa-8aa8-4707-a992-b1cbe555a53f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StosWLiscie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.cs-lab05-Implementacja-stosu.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.cs-lab05-Implementacja-stosu.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StosWTablicy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/StosWTablicy.cs" afterDir="false" />
+    <list default="true" id="2fc4a438-bf9b-4796-8941-6e0e05182150" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.cs-lab05-Implementacja-stosu.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.cs-lab05-Implementacja-stosu.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,26 +33,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/StosWLiscie.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/IStos.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/StosEmptyException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/unitTest/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/StosWTablicy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UnitTest1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/IStos.cs" />
-        <option value="$PROJECT_DIR$/src/StosWTablicy.cs" />
-        <option value="$PROJECT_DIR$/src/StosWLiscie.cs" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1lViDsr4mgEc1BIm5gFTDkpb0vh" />
+  <component name="ProjectId" id="1lVmukvIXjPt26aIf6naDF5UQ5m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,29 +47,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="22c531fa-8aa8-4707-a992-b1cbe555a53f" name="Default Changelist" comment="" />
-      <created>1607688545703</created>
+      <changelist id="2fc4a438-bf9b-4796-8941-6e0e05182150" name="Default Changelist" comment="" />
+      <created>1607690859252</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607688545703</updated>
-      <workItem from="1607688548801" duration="2006000" />
-      <workItem from="1607690924570" duration="453000" />
-      <workItem from="1607691577617" duration="57000" />
-      <workItem from="1607691861207" duration="56000" />
-      <workItem from="1607693668942" duration="1720000" />
+      <updated>1607690859252</updated>
+      <workItem from="1607690863078" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -101,13 +81,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607691882382">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607690870469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.188.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607691882382" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1607689625159">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/-1920.188.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607689625159" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.188.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607690870469" />
   </component>
 </project>

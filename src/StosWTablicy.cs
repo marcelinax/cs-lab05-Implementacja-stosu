@@ -53,7 +53,7 @@ namespace Stos
         }
         
         // implementacja indeksera
-        public T this[int index] => (index > szczyt - 1) ? throw new IndexOutOfRangeException(): tab[index];
+        public T this[int index] => (index > Count - 1) ? throw new IndexOutOfRangeException(): tab[index];
 
         // wywołanie enumeratora 
         public IEnumerator<T> GetEnumerator() => new EnumeratorStosu(this);
@@ -61,7 +61,7 @@ namespace Stos
         // wywołanie enumeratora za pomocą indeksera  oraz słowa kluczowego yield
         public IEnumerator<T> GetEnumerator()
         {
-            for (int i = 0; i < szczyt; i++)
+            for (int i = 0; i < Count; i++)
                 yield return this[i];
         }
 
@@ -70,7 +70,7 @@ namespace Stos
         {
             get
             {
-                for (int i = szczyt - 1; i >= 0; i--)
+                for (int i = Count - 1; i >= 0; i--)
                     yield return this[i];
             }
         }
@@ -78,6 +78,12 @@ namespace Stos
         public System.Collections.ObjectModel.ReadOnlyCollection<T> ToArrayReadOnly()
         {
             return Array.AsReadOnly(tab);
+        }
+
+        // metoda modyfikująca stos (zajętych ok. 90% komórek, ok. 10% wolnych)
+        public void TrimExcess()
+        {
+            
         }
 
     }
