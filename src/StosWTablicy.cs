@@ -51,5 +51,57 @@ namespace Stos
                 temp[i] = tab[i];
             return temp;
         }
+        
+        // implementacja indeksera
+        public T this[int index] => (index > szczyt - 1) ? throw new IndexOutOfRangeException(): tab[index];
+
+        // wywołanie enumeratora 
+        public IEnumerator<T> GetEnumerator() => new EnumeratorStosu(this);
+
+        // wywołanie enumeratora za pomocą indeksera  oraz słowa kluczowego yield
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i < szczyt; i++)
+                yield return this[i];
+        }
+
+        // przeglądanie stosu od ostatniego wstawionego do pierwszego
+        public IEnumerable<T> TopToBottom
+        {
+            get
+            {
+                for (int i = szczyt - 1; i >= 0; i--)
+                    yield return this[i];
+            }
+        }
+
+        public System.Collections.ObjectModel.ReadOnlyCollection<T> ToArrayReadOnly()
+        {
+            return Array.AsReadOnly(tab);
+        }
+
+    }
+    // implementacja iteratora - obiekt IEnumerable<T>
+    private class EnumeratorStosu : IEnumerator<T>
+    {
+        private StosWTablicy<T> stos;
+        private int position = -1;
+        interneal EnumeratorStosu(StosWTablicy<T> stos) => this.stos = stos;
+        public T Current => stos.tab[position];
+        object IEnumerator.Current => Current; 
+        public void Dispose(){}
+
+        public bool MoveNext()
+        {
+            if (position < stos.Count - 1)
+            {
+                position++;
+                return true;
+            }
+            else return false;
+        }
+
+        public void Reset() => position = -1;
     }
 }
+
