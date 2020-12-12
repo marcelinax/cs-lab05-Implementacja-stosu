@@ -19,6 +19,8 @@ namespace Stos
 
         public int Count => szczyt + 1;
 
+        public int TLength => tab.Length;
+
         public bool IsEmpty => szczyt == -1;
 
         public void Clear() => szczyt = -1;
@@ -84,7 +86,14 @@ namespace Stos
         }
 
         // metoda modyfikująca stos (zajętych ok. 90% komórek, ok. 10% wolnych)
-        public void TrimExcess(){}
+        public void TrimExcess()
+        {
+            int wszystkie = tab.Length;
+            int wolne = wszystkie - szczyt - 1;
+
+
+            Array.Resize(ref tab, (int) ((wszystkie - wolne) * 1.1));
+        }
         
         // implementacja iteratora - obiekt IEnumerable<T>
         private class EnumeratorStosu : IEnumerator<T>
@@ -110,5 +119,6 @@ namespace Stos
         }
     }
    
+    
    
 }

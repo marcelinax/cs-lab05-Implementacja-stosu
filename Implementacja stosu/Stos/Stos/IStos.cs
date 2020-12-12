@@ -27,13 +27,19 @@
         T Pop();
 
         //zwraca liczbę elementów na stosie
-        int Count { get; }
+        int Count { get; } 
+        
+        //zwraca wielkosc tablicy stosu
+        int TLength { get; }
 
         //zwraca true, jeśli stos jest pusty, a false w przeciwnym przypadku
         bool IsEmpty { get; }
 
         //opróżnia stos
         void Clear();
+        
+        //metoda modyfikująca stos (zajętych ok. 90% komórek, ok. 10% wolnych)
+        void TrimExcess();
         
         // indekser, dostęp do elementów stosu jak do elementów tablicy
         T this [int index] { get; }
